@@ -1,0 +1,92 @@
+[
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/Acceptor.cc.o -c /home/test/MYMUDUO/Acceptor.cc",
+  "file": "/home/test/MYMUDUO/Acceptor.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/Buffer.cc.o -c /home/test/MYMUDUO/Buffer.cc",
+  "file": "/home/test/MYMUDUO/Buffer.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/Callbacks.cc.o -c /home/test/MYMUDUO/Callbacks.cc",
+  "file": "/home/test/MYMUDUO/Callbacks.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/Channel.cc.o -c /home/test/MYMUDUO/Channel.cc",
+  "file": "/home/test/MYMUDUO/Channel.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/CurrentThread.cc.o -c /home/test/MYMUDUO/CurrentThread.cc",
+  "file": "/home/test/MYMUDUO/CurrentThread.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/DefaultPoller.cc.o -c /home/test/MYMUDUO/DefaultPoller.cc",
+  "file": "/home/test/MYMUDUO/DefaultPoller.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/EPollPoller.cc.o -c /home/test/MYMUDUO/EPollPoller.cc",
+  "file": "/home/test/MYMUDUO/EPollPoller.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/EventLoop.cc.o -c /home/test/MYMUDUO/EventLoop.cc",
+  "file": "/home/test/MYMUDUO/EventLoop.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/EventLoopThread.cc.o -c /home/test/MYMUDUO/EventLoopThread.cc",
+  "file": "/home/test/MYMUDUO/EventLoopThread.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/EventLoopThreadPool.cc.o -c /home/test/MYMUDUO/EventLoopThreadPool.cc",
+  "file": "/home/test/MYMUDUO/EventLoopThreadPool.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/InetAddress.cc.o -c /home/test/MYMUDUO/InetAddress.cc",
+  "file": "/home/test/MYMUDUO/InetAddress.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/Logger.cc.o -c /home/test/MYMUDUO/Logger.cc",
+  "file": "/home/test/MYMUDUO/Logger.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/Poller.cc.o -c /home/test/MYMUDUO/Poller.cc",
+  "file": "/home/test/MYMUDUO/Poller.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/Socket.cc.o -c /home/test/MYMUDUO/Socket.cc",
+  "file": "/home/test/MYMUDUO/Socket.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/TcpConnection.cc.o -c /home/test/MYMUDUO/TcpConnection.cc",
+  "file": "/home/test/MYMUDUO/TcpConnection.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/TcpServer.cc.o -c /home/test/MYMUDUO/TcpServer.cc",
+  "file": "/home/test/MYMUDUO/TcpServer.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/Thread.cc.o -c /home/test/MYMUDUO/Thread.cc",
+  "file": "/home/test/MYMUDUO/Thread.cc"
+},
+{
+  "directory": "/home/test/MYMUDUO/build",
+  "command": "/usr/bin/x86_64-redhat-linux-g++ -Dmymuduo_EXPORTS   -g -std=c++11 -fPIC -g -fPIC -o CMakeFiles/mymuduo.dir/Timestamp.cc.o -c /home/test/MYMUDUO/Timestamp.cc",
+  "file": "/home/test/MYMUDUO/Timestamp.cc"
+}
+]
