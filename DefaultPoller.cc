@@ -1,7 +1,7 @@
 #include "Poller.h"
 #include "EPollPoller.h"
 #include <stdlib.h>
-
+//已检查
 Poller* Poller::newDefaultPoller(EventLoop *loop){
     if (::getenv("MUDUO_USE_POLL")){
         return nullptr;//生成poll的实例

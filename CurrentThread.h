@@ -2,7 +2,7 @@
 
 #include <unistd.h>
 #include <sys/syscall.h>
-
+//已检查
 namespace CurrentThread{
     extern __thread int t_cachedTid;
     void cacheTid();

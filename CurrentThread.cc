@@ -1,5 +1,5 @@
 #include "CurrentThread.h"
-
+//已检查
 
 namespace CurrentThread{
     __thread int t_cachedTid = 0;

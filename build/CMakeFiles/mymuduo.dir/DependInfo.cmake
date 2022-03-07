@@ -10,7 +10,6 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/test/MYMUDUO/Acceptor.cc" "CMakeFiles/mymuduo.dir/Acceptor.cc.o" "gcc" "CMakeFiles/mymuduo.dir/Acceptor.cc.o.d"
   "/home/test/MYMUDUO/Buffer.cc" "CMakeFiles/mymuduo.dir/Buffer.cc.o" "gcc" "CMakeFiles/mymuduo.dir/Buffer.cc.o.d"
-  "/home/test/MYMUDUO/Callbacks.cc" "CMakeFiles/mymuduo.dir/Callbacks.cc.o" "gcc" "CMakeFiles/mymuduo.dir/Callbacks.cc.o.d"
   "/home/test/MYMUDUO/Channel.cc" "CMakeFiles/mymuduo.dir/Channel.cc.o" "gcc" "CMakeFiles/mymuduo.dir/Channel.cc.o.d"
   "/home/test/MYMUDUO/CurrentThread.cc" "CMakeFiles/mymuduo.dir/CurrentThread.cc.o" "gcc" "CMakeFiles/mymuduo.dir/CurrentThread.cc.o.d"
   "/home/test/MYMUDUO/DefaultPoller.cc" "CMakeFiles/mymuduo.dir/DefaultPoller.cc.o" "gcc" "CMakeFiles/mymuduo.dir/DefaultPoller.cc.o.d"

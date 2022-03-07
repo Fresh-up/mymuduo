@@ -3,8 +3,15 @@
 #include "Socket.h"
 #include "Channel.h"
 #include "EventLoop.h"
-
+//已检查
 #include <functional>
+#include <errno.h>
+#include <sys/types.h>         
+#include <sys/socket.h>
+#include <strings.h>
+#include <netinet/tcp.h>
+#include <sys/socket.h>
+#include <string>
 
 static EventLoop* CheckLoopNotNull(EventLoop *loop){
     if (loop == nullptr){
@@ -113,6 +120,7 @@ void TcpConnection::sendInLoop(const void* data, size_t len){
     }
 }
 void TcpConnection::shutdown(){
+    if (state_ == kConnected)
     {
         setState(kDisconnecting);
         loop_->runInLoop(std::bind(&TcpConnection::shutdownInLoop, this));

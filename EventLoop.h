@@ -5,7 +5,7 @@
 #include <atomic>
 #include <memory>
 #include <mutex>
-
+//已检查
 #include "noncopyable.h"
 #include "Timestamp.h"
 #include "CurrentThread.h"
@@ -43,7 +43,7 @@ public:
     //EventLoop的方法 => Poller的方法
     void updateChannel(Channel *channel);
     void removeChannel(Channel *channel);
-    bool hasChannel(Channel *channle);
+    bool hasChannel(Channel *channel);
 
     //判断EventLoop对象是否在自己的线程里面
     bool isInLoopThread() const { return threadId_ == CurrentThread::tid(); }

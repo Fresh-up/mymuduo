@@ -3,8 +3,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/mymuduo.dir/Acceptor.cc.o.d"
   "CMakeFiles/mymuduo.dir/Buffer.cc.o"
   "CMakeFiles/mymuduo.dir/Buffer.cc.o.d"
-  "CMakeFiles/mymuduo.dir/Callbacks.cc.o"
-  "CMakeFiles/mymuduo.dir/Callbacks.cc.o.d"
   "CMakeFiles/mymuduo.dir/Channel.cc.o"
   "CMakeFiles/mymuduo.dir/Channel.cc.o.d"
   "CMakeFiles/mymuduo.dir/CurrentThread.cc.o"

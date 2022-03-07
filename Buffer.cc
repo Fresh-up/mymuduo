@@ -1,3 +1,4 @@
+//已检查
 #include "Buffer.h"
 #include <errno.h>
 #include <sys/uio.h>

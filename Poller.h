@@ -1,4 +1,5 @@
 #pragma once
+//已检查
 #include "noncopyable.h"
 #include "Timestamp.h"
 #include "Channel.h"

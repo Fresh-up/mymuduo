@@ -1,5 +1,5 @@
 #pragma once
-
+//已检查
 #include "noncopyable.h"
 
 class InetAddress;
@@ -17,7 +17,7 @@ public:
 
     void shutdownWrite();
 
-    void setTcpDelay(bool on);
+    void setTcpNoDelay(bool on);
     void setReuseAddr(bool on);
     void setReusePort(bool on);
     void setKeepAlive(bool on);

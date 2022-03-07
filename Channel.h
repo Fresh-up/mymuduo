@@ -1,5 +1,5 @@
 #pragma once
-
+//已检查
 #include "noncopyable.h"
 #include "Timestamp.h"
 #include "Logger.h"
@@ -68,8 +68,11 @@ private:
     int revents_; //poller返回的具体发生的事件
     int index_;
 
-    std::weak_ptr<void> tie_;
+    std::weak_ptr<void> tie_;//防止channel被手动remove之后，还在使用这个channel,使用弱智能指针实现跨线程的生存状态的监听
     bool tied_;
+    /*shared_ptr与weak_ptr搭配使用，要注意shared_ptr可能会延长对象的生存期以及循环引用问题。
+    下面两个例子都用到了弱回调，弱回调是指如果对象还活着，就调用它的成员函数，否则忽略之，
+    可以通过尝试将weak_ptr提升为shared_ptr,如果提升成功则表示对象还活着。*/
 
     //因为只有channel通道里面能获知fd最终发生的具体事件revents
     //是读事件还是写事件，还是监听事件等等....

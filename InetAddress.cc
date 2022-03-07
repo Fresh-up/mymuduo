@@ -1,3 +1,4 @@
+//已检查
 #include "InetAddress.h"
 InetAddress::InetAddress(uint16_t port, std::string ip){
     bzero(&addr_, sizeof addr_);

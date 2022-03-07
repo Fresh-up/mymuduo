@@ -1,3 +1,4 @@
+//已检查
 #pragma once
 #include "Poller.h"
 #include "Timestamp.h"

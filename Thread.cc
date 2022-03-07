@@ -1,4 +1,5 @@
 #include "Thread.h"
+//已检查
 #include "CurrentThread.h"
 #include <semaphore.h>
 std::atomic_int Thread::numCreated_(0);//静态成员变量需要在类外单独进行初始化

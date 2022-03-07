@@ -1,3 +1,4 @@
+#已检查
 #!/bin/bash
 
 set -e

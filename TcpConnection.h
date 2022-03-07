@@ -1,5 +1,5 @@
 #pragma once
-
+//已检查
 #include "noncopyable.h"
 #include "InetAddress.h"
 #include "Callbacks.h"
@@ -67,7 +67,7 @@ private:
     void handleClose();
     void handleError();
 
-    void send(const void *message, int len);
+
     void sendInLoop(const void* message, size_t len);
 
     //void shutdown();

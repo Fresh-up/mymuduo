@@ -1,6 +1,6 @@
 #include "EventLoopThreadPool.h"
 #include "EventLoopThreadPool.h"
-
+//已检查
 #include <memory>
 
 EventLoopThreadPool::EventLoopThreadPool(EventLoop *baseLoop, const std::string &nameArg):
@@ -42,5 +42,5 @@ EventLoop* EventLoopThreadPool::getNextLoop(){
 std::vector<EventLoop*> EventLoopThreadPool::getAllLoops(){
     if (loops_.empty())
         return std::vector<EventLoop*>(1, baseLoop_);
-    else return loops_;
+    else loops_;
 }

@@ -1,7 +1,7 @@
 #include "Socket.h"
 #include "Logger.h"
 #include "InetAddress.h"
-
+//已检查
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <unistd.h>
@@ -39,7 +39,7 @@ void Socket::shutdownWrite(){
     }
 }
 
-void Socket::setTcpDelay(bool on){
+void Socket::setTcpNoDelay(bool on){
     int optval = on ? 1 : 0;
     ::setsockopt(sockfd_, IPPROTO_TCP, TCP_NODELAY, &optval, sizeof optval);
 }

@@ -1,5 +1,5 @@
 #include "EventLoopThread.h"
-
+//已检查
 
 EventLoopThread::EventLoopThread(const ThreadInitCallback &cb,
     const std::string &name):

@@ -177,30 +177,6 @@ Buffer.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Buffer.cc.s
 .PHONY : Buffer.cc.s
 
-Callbacks.o: Callbacks.cc.o
-.PHONY : Callbacks.o
-
-# target to build an object file
-Callbacks.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Callbacks.cc.o
-.PHONY : Callbacks.cc.o
-
-Callbacks.i: Callbacks.cc.i
-.PHONY : Callbacks.i
-
-# target to preprocess a source file
-Callbacks.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Callbacks.cc.i
-.PHONY : Callbacks.cc.i
-
-Callbacks.s: Callbacks.cc.s
-.PHONY : Callbacks.s
-
-# target to generate assembly for a file
-Callbacks.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/mymuduo.dir/build.make CMakeFiles/mymuduo.dir/Callbacks.cc.s
-.PHONY : Callbacks.cc.s
-
 Channel.o: Channel.cc.o
 .PHONY : Channel.o
 
@@ -576,9 +552,6 @@ help:
 	@echo "... Buffer.o"
 	@echo "... Buffer.i"
 	@echo "... Buffer.s"
-	@echo "... Callbacks.o"
-	@echo "... Callbacks.i"
-	@echo "... Callbacks.s"
 	@echo "... Channel.o"
 	@echo "... Channel.i"
 	@echo "... Channel.s"

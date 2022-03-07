@@ -2,14 +2,16 @@
 #include "Logger.h"
 #include "Poller.h"
 #include "Channel.h"
-
+//已检查
 #include <sys/eventfd.h>
 #include <unistd.h>
 #include <fcntl.h>
 #include <errno.h>
 #include <memory>
 
-//防止一个线程创建多个EventLoop thread_local
+/*防止一个线程创建多个EventLoop thread_local
+__thread变量是每个线程有一份独立实体，各个线程的变量值互不干扰
+用于判断当前线程是否只有一个EventLoop对象*/
 __thread EventLoop *t_loopInThisThread = nullptr;
 
 //定义默认的Poller IO复用接口的超时时间
@@ -53,7 +55,7 @@ EventLoop::~EventLoop(){
 }
 
 
-//开启事件循环
+//开启事件循环,这是EventLoop的主要功能
 void EventLoop::loop(){
     looping_ = true;
     quit_ = false;

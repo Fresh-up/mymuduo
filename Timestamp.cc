@@ -1,5 +1,5 @@
 #include "Timestamp.h"
-
+//已检查
 Timestamp::Timestamp():microSecondsSinceEpoch_(0) {}
 Timestamp::Timestamp(int64_t microSecondsSinceEpoch)
     :microSecondsSinceEpoch_(microSecondsSinceEpoch)

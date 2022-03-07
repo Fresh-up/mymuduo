@@ -2,7 +2,7 @@
 #include "Logger.h"
 #include "Channel.h"
 #include <errno.h>
-
+//已检查
 // channel未添加到poller中，channel的成员index_=-1
 const int kNew = -1;//-1表示一个channel还没有添加到poller里
 // channel已经添加到poller中
@@ -62,7 +62,7 @@ void EPollPoller::fillActiveChannels(int numEvents, ChannelList* activeChannels)
 
 void EPollPoller::updateChannel(Channel *channel){
     const int index = channel->index();
-    LOG_INFO("cunc=%s => fd=%d events=%d index=%d \n", __FUNCTION__, channel->fd(), channel->events(), index);
+    LOG_INFO("func=%s => fd=%d events=%d index=%d \n", __FUNCTION__, channel->fd(), channel->events(), index);
     if (index == kNew || index == kDeleted){
         if (index == kNew){
             int fd = channel->fd();
@@ -95,14 +95,14 @@ void EPollPoller::removeChannel(Channel *channel){
 
 void EPollPoller::update(int operation, Channel* channel){
     epoll_event event;
-    memset(&event, 0, sizeof event);
+    bzero(&event, sizeof event);
     int fd = channel->fd();
 
     event.events = channel->events();
     event.data.fd = fd;
     event.data.ptr = channel;
     
-    fd = channel->fd();
+
     if (::epoll_ctl(epollfd_, operation, fd, &event) < 0){
         if (operation == EPOLL_CTL_DEL)
             LOG_ERROR("epoll_ctl del error:%d\n", errno);

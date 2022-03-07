@@ -49,6 +49,7 @@
         "typeindex": "cpp",
         "typeinfo": "cpp",
         "cstddef": "cpp",
-        "condition_variable": "cpp"
+        "condition_variable": "cpp",
+        "algorithm": "cpp"
     }
 }

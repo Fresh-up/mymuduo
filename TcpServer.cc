@@ -2,7 +2,7 @@
 #include "TcpConnection.h"
 #include "Logger.h"
 #include "strings.h"
-
+//已检查
 
 static EventLoop* CheckLoopNotNull(EventLoop *loop){
     if (loop == nullptr){
@@ -107,3 +107,4 @@ void TcpServer::removeConnectionInLoop(const TcpConnectionPtr &conn){
         std::bind(&TcpConnection::connectDestroyed, conn)
     );
 }
+//已检查

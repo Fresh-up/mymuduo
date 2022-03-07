@@ -1,5 +1,5 @@
 #pragma once
-
+//已检查
 #include <vector>
 #include <unistd.h>
 #include <string>
@@ -13,7 +13,7 @@ public:
     static const size_t kInitialSize = 1024;
 
     explicit Buffer(size_t initialSize = kInitialSize)
-        :buffer_(kCheapPrepend + kInitialSize),
+        :buffer_(kCheapPrepend + initialSize),
          readerIndex_(kCheapPrepend),
          writerIndex_(kCheapPrepend){}
     

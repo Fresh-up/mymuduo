@@ -1,4 +1,5 @@
 #pragma once
+//已检查
 #include <string>
 #include "noncopyable.h"
 //调用LOG_INFO("%s %d", arg1, arg2)
@@ -67,5 +68,4 @@ public:
     void log(std::string msg);
 private:
     int logLevel_;
-    Logger(){}
 }; 
