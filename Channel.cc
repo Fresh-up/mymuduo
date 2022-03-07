@@ -1,3 +1,4 @@
+//已检查
 #include "Channel.h"
 #include "EventLoop.h"
 
@@ -23,7 +24,6 @@ void Channel::tie(const std::shared_ptr<void> &obj){
 */
 void Channel::update(){
     //通过channel所属的EventLoop,调用poller的相应方法，注册fd的events事件
-    //add code...
     loop_->updateChannel(this);
 }
 
@@ -32,13 +32,17 @@ void Channel::remove(){
     loop_->removeChannel(this);
 }
 
-
+//fd
 void Channel::handleEvent(Timestamp receiveTime){
     if (tied_){
         std::shared_ptr<void> guard = tie_.lock();
         if (guard){
             handleEventWithGuard(receiveTime);
         }
+    }
+    //这里出了问题，找得我好久
+    else{
+        handleEventWithGuard(receiveTime);
     }
 }
 
@@ -60,5 +64,9 @@ void Channel::handleEventWithGuard(Timestamp receiveTime){
         if (readCallback_){
             readCallback_(receiveTime);
         }
+    }
+    if (revents_ & EPOLLOUT){
+        if (writeCallback_)
+            writeCallback_();
     }
 }
